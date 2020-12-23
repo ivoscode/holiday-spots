@@ -1,10 +1,16 @@
+import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Spinner from './components/Spinner';
+
+const Home = lazy(() => import('./pages/Home'));
+//import Home from './pages/Home';
 
 function App() {
   return (
     <Router>
-      <Route exact path='/' component={Home} />
+      <Suspense fallback={<Spinner />}>
+        <Route exact path='/' component={Home} />
+      </Suspense>
     </Router>
   );
 }
