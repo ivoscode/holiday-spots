@@ -44,6 +44,7 @@
 .hero {
   height: 100vh;
 
-  background-image: url(./img/hero.jpg);
+  background-image: url(./img/travel7.JPG);
   background-size: cover;
+  background-repeat: no-repeat;
 }

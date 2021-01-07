@@ -2,7 +2,10 @@ import React from 'react';
 
 const Form = () => {
   return (
-    <form action='#' class='absolute inset-x-0 top-32 mx-auto px-24'>
+    <form
+      action='#'
+      class=' w-9/12 absolute inset-x-0 top-32 mx-auto  lg:pl-40'
+    >
       <div class='flex items-start justify-start flex-wrap'>
         <div class='lg:w-1/3 w-full lg:pr-2 mb-4 lg:mb-0'>
           <label for='where' class='label'>
