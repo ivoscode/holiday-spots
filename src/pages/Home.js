@@ -6,6 +6,7 @@ import Activities from '../components/Activities/Activities';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
+import Layout from '../components/Layout';
 //import Venues from '../../utility/Venue/Venues';
 
 const Home = () => {
@@ -63,9 +64,13 @@ const Home = () => {
     <div className=''>
       <Header />
       <Hero />
-
-      <Cities cities={appState.cities} header='Recommended Cities For You' />
-      <Activities activities={activitiesUrlState} header='Today in your area' />
+      <Layout>
+        <Cities cities={appState.cities} header='Recommended Cities For You' />
+        <Activities
+          activities={activitiesUrlState}
+          header='Today in your area'
+        />
+      </Layout>
       <Footer />
     </div>
   );
