@@ -11,7 +11,7 @@ function Cities(props) {
     );
   });
   return (
-    <div className='max-w-5xl mx-auto px-4 lg:px-0'>
+    <div className='max-w-5xl mx-auto mt-20 px-4 lg:px-0'>
       <h1 className='main-header-text'>{props.header}</h1>
       <SlickSlider elements={cities} />
     </div>

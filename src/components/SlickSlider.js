@@ -1,5 +1,6 @@
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import './Slider.css';
 
 import Slider from 'react-slick';
 
@@ -8,9 +9,10 @@ const SlickSlider = (props) => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 7,
-    slidesToScroll: 4,
+    slidesToShow: 6,
+    slidesToScroll: 3,
     initialSlide: 0,
+    arrows: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -38,6 +40,7 @@ const SlickSlider = (props) => {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
+          arrows: false,
         },
       },
     ],
@@ -46,7 +49,7 @@ const SlickSlider = (props) => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 8,
+    slidesToShow: 6,
     slidesToScroll: 6,
     initialSlide: 0,
     arrows: true,
@@ -77,6 +80,7 @@ const SlickSlider = (props) => {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
+          arrows: false,
         },
       },
     ],
@@ -85,7 +89,7 @@ const SlickSlider = (props) => {
     ? settingsActivities
     : settingsCities;
   return (
-    <div className=''>
+    <div className='slick'>
       <Slider {...settings}>{props.elements}</Slider>
     </div>
   );

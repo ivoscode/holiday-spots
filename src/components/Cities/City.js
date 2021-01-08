@@ -5,8 +5,8 @@ class City extends Component {
     // console.log(this.props.city);
     const { cityName, image, price, id } = this.props.city;
     return (
-      <div className='m-2'>
-        <div className='image'>
+      <div className='m-2 '>
+        <div className=''>
           <img src={image} alt='cityimage' />
         </div>
         <div className='city-name'>{cityName}</div>
