@@ -9,7 +9,7 @@ import Hero from '../components/Hero';
 import Layout from '../components/Layout';
 //import Venues from '../../utility/Venue/Venues';
 
-const Home = () => {
+const Home = (props) => {
   const [appState, setAppState] = useState({
     cities: [],
     europeCities: {},
@@ -68,7 +68,7 @@ const Home = () => {
         <Cities cities={appState.cities} header='Recommended Cities For You' />
         <Activities
           activities={activitiesUrlState}
-          header='Today in your area'
+          header='Today In Your Area'
         />
       </Layout>
       <Footer />

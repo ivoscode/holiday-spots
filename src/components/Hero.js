@@ -1,11 +1,10 @@
 import React from 'react';
+import SearchBox from './SearchBox';
 
-import Form from '../components/Form';
-
-const Hero = () => {
+const Hero = (props) => {
   return (
     <div className='hero'>
-      <Form />
+      <SearchBox history={props.history} />
     </div>
   );
 };
